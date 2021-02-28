@@ -1,0 +1,122 @@
+#home {
+  --first-color: #674ea7;
+  --second-color: #f4e767;
+  --light-gray: lightgray;
+  --hover-first-color: #513d83;
+}
+
+html, body {
+  padding: 0;
+  height: 100%;
+  margin: 0px;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: var(--first-color);
+}
+
+.container {
+  display: grid;
+}
+
+.form {
+  background-color: white;
+  width: 550px;
+  height: 450px;
+  margin: auto;
+  position: relative;
+  padding-top: 15px;
+}
+form input, textarea {
+  margin: 10px 0;
+  border: 0;
+  background-color: lightgray;
+  border-radius: 5px;
+  padding: 10px;
+}
+.form input[type=submit] {
+  /* width: 100%; */
+  background-color: var(--first-color);
+  color: white;
+}
+.form input[type=submit]:hover {
+  /* width: 100%; */
+  background-color: var(--hover-first-color);
+  color: white;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-width: 95%;
+}
+
+.center header {
+  background-color: var(--first-color);
+  color: white;
+}
+
+header {
+  background-color: blueviolet;
+  flex: 0 0 40px;
+  color: white;
+  /* justify-content: center; */
+  padding: 20px;
+}
+
+header nav {
+  background-color: transparent;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.center header nav a:hover {
+  text-decoration: underline
+}
+
+nav {
+  background-color: #f0f0f0;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+  display: inline-flex;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
