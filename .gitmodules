@@ -1,0 +1,3 @@
+[submodule "Solidity-Projects"]
+	path = Solidity-Projects
+	url = https://github.com/samfrolick/Solidity-Projects.git
