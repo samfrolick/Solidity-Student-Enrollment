@@ -12,6 +12,14 @@ html, body {
   overflow: hidden;
 }
 
+section {
+  width: 94%;
+  margin: 1%;
+  padding: 1%;
+  position: relative;
+  box-sizing: border-box;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
   padding-bottom: 0;
