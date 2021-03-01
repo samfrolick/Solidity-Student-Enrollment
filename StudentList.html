@@ -27,7 +27,15 @@
             </nav>
         </header>
     </div>
-    <button id="getStudentsButton">Get Students</button>
+    <!--<button id="getStudentsButton">Get Students</button>-->
+    <section id="studentCardSection">
+        <div id="studentCardGrid" class="row row-cols-1 row-cols-md-3 g-4">
+        </div>
+    </section>
+    <script src="js/studentListing.js"></script>
+    <script>
+        window.onload = loadStudents;
+    </script>
 </body>
-<script src="js/StudentListScript.js"></script>
+
 </html>
