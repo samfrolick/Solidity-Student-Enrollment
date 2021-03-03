@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/grid.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         crossorigin="anonymous">
     <script src="js/info.js"></script>
@@ -28,51 +29,54 @@
             </nav>
         </header>
 
-        <article>
-            <form id="enrollmentForm" class="form">
-                <h1>Student Enrollment</h1>
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="username" name="username" placeholder="username">
-                    <label for="username">Username</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="address" name="address"
-                        placeholder="0x0000000000000"></input>
-                    <label for="address">Wallet Address</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="age" name="age" placeholder="25"></input>
-                    <label for="age">Age</label>
-                </div>
-                <div class="form-floating mb-3">
+        <container class="mainContainer">
+            <container class="formSection">
+                <form id="enrollmentForm" class="form">
+                    <h1>Student Enrollment</h1>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="username" name="username" placeholder="username">
+                        <label for="username">Username</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="address" name="address"
+                            placeholder="0x0000000000000"></input>
+                        <label for="address">Wallet Address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="age" name="age" placeholder="25"></input>
+                        <label for="age">Age</label>
+                    </div>
+                    <div class="form-floating mb-3">
 
-                    <input class="form-control" type="email" id="email" name="email"
-                        placeholder="example@gmail.com"></input>
-                    <label for="email">Email</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <select class="form-select" id="programLevel" name="programLevel">
-                        <option value="0">Freshman</option>
-                        <option value="1">Sophomore</option>
-                        <option value="2">Junior</option>
-                        <option value="3">Senior</option>
-                        <option value="4">Graduate</option>
-                    </select>
-                    <label for="programLevel">Program Level</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <select class="form-select" id="blockchainEnrolled" name="blockchainEnrolled">
-                        <option value="True">Yes</option>
-                        <option value="False">No</option>
-                    </select>
-                    <label for="blockchainEnrolled">Blockchain Enrolled</label>
-                </div>
-                <div class="mb-3">
-                    <input type="submit" value="Submit"><br><br>
-                </div>
-            </form>
-        </article>
+                        <input class="form-control" type="email" id="email" name="email"
+                            placeholder="example@gmail.com"></input>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="programLevel" name="programLevel">
+                            <option value="0">Freshman</option>
+                            <option value="1">Sophomore</option>
+                            <option value="2">Junior</option>
+                            <option value="3">Senior</option>
+                            <option value="4">Graduate</option>
+                        </select>
+                        <label for="programLevel">Program Level</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="blockchainEnrolled" name="blockchainEnrolled">
+                            <option value="True">Yes</option>
+                            <option value="False">No</option>
+                        </select>
+                        <label for="blockchainEnrolled">Blockchain Enrolled</label>
+                    </div>
+                    <div class="mb-3">
+                        <input type="submit" value="Submit"><br><br>
+                    </div>
+                </form>
+            </container>
+        </container>
     </div>
 </body>
 <script src="js/enrollmentForm.js"></script>
+
 </html>

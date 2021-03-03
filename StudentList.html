@@ -17,25 +17,29 @@
 
 <body id="home" class="open-left">
     <div class="center">
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="studentList.html">List</a></li>
-                    <li><a href="index.html">Enroll</a></li>
-                    <li><a href="contract.html">Contract</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
-    <!--<button id="getStudentsButton">Get Students</button>-->
-    <section id="studentCardSection">
-        <div id="studentCardGrid" class="row row-cols-1 row-cols-md-3 g-4">
+        <div>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="studentList.html">List</a></li>
+                        <li><a href="index.html">Enroll</a></li>
+                        <li><a href="contract.html">Contract</a></li>
+                    </ul>
+                </nav>
+            </header>
         </div>
-    </section>
-    <script src="js/studentListing.js"></script>
-    <script>
-        window.onload = loadStudents;
-    </script>
+        <container class="container">
+            <!--<button id="getStudentsButton">Get Students</button>-->
+            <section id="studentCardSection">
+                <div id="studentCardGrid" class="row row-cols-1 row-cols-md-3 g-4">
+                </div>
+            </section>
+            <script src="js/studentListing.js"></script>
+            <script>
+                window.onload = loadStudents;
+            </script>
+        </container>
+    </div>
 </body>
 
 </html>

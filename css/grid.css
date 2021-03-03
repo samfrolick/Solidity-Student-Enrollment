@@ -1,0 +1,14 @@
+.mainContainer {
+    display: grid;
+    grid-template-columns: 25px auto 25px;
+    grid-template-rows:  auto 150px;
+    grid-template-areas: ". main ." ". main ." ". main ." "footer footer footer";
+}
+
+.codeSection{
+    grid-area: main;
+}
+
+.formSection{
+    grid-area: main;
+}

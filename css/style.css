@@ -9,15 +9,7 @@ html, body {
   padding: 0;
   height: 100%;
   margin: 0px;
-  overflow: hidden;
-}
-
-section {
-  width: 94%;
-  margin: 1%;
-  padding: 1%;
-  position: relative;
-  box-sizing: border-box;
+  /*overflow: hidden;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,6 +20,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   display: grid;
+  grid-template-columns:25px auto 25px;
+  grid-template-rows: auto 50px;
+  grid-template-areas: 
+    ". main ." 
+    ". main ." 
+    ". main ."
+    "footer footer footer";
+}
+
+.container > section {
+  width: 100%;
+  margin: 1%;
+  padding: 1%;
+  grid-area: main;
 }
 
 .form {
@@ -38,6 +44,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   padding-top: 15px;
 }
+
 form input, textarea {
   margin: 10px 0;
   border: 0;
@@ -45,16 +52,19 @@ form input, textarea {
   border-radius: 5px;
   padding: 10px;
 }
+
 .form input[type=submit] {
   /* width: 100%; */
   background-color: var(--first-color);
   color: white;
 }
+
 .form input[type=submit]:hover {
   /* width: 100%; */
   background-color: var(--hover-first-color);
   color: white;
 }
+
 .center {
   display: flex;
   flex-direction: column;
@@ -88,11 +98,12 @@ header nav ul {
 header nav a {
   color: white;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .center header nav a:hover {
-  text-decoration: underline
+  text-decoration: underline;
+  color: white;
 }
 
 nav {
